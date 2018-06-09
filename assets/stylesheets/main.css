@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFEFEF;
+    color: #3F3F3F;
+}
+
+
+
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-alt {
+    border: 1px solid #95956E;
+    padding: 10px 30px;
+  }
+
+
+
