@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/typography.css">
     <link rel="stylesheet" href="assets/stylesheets/footer.css">
+    <link rel="stylesheet" href="assets/stylesheets/responsive.css">
     <link rel="stylesheet" href="assets/stylesheets/forms.css">
     <link rel="stylesheet" href="assets/stylesheets/header.css">
     <link rel="stylesheet" href="assets/stylesheets/layout.css">
@@ -29,21 +30,28 @@
                 <a href="index.html">LETHA</a>
             </h1>
         </header>
-        <nav class="primary-nav">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">Products</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
+        <nav>
+
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Products
+                        <ion-icon name="arrow-dropdown"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="boots.html">Boots</a>
+                        <a href="brouges.html">Brouges</a>
+                    </div>
+                </div>
+
+                <div class="topnav-right">
+                        <a href="#search"><ion-icon name="search"></ion-icon></a>
+                        <a href="#cart"><ion-icon name="cart"></ion-icon></a>
+                      </div>
+            </div>
+
         </nav>
 
         <section class="box1">
@@ -52,7 +60,7 @@
 
                 <figure class="center box">
                     <h1>BROUGES</h1>
-                    <a href="#">View All</a>
+                    <a href="brouges.html">View All</a>
                     <img class="figure-img" src="assets/images/brouges.png" alt="A pair of brouges">
                     <figure>
             </article>
@@ -64,7 +72,7 @@
 
                 <figure class="center box">
                     <h1>BOOTS</h1>
-                    <a href="#">View All</a>
+                    <a href="boots.html">View All</a>
                     <img class="figure-img" src="assets/images/hiking.png" alt="A pair of hiking shoes">
                     <figure>
             </article>
@@ -82,22 +90,14 @@
 
         <!-- Product showcase -->
 
-        <div class="row">
-                <div class="column">
-                    <img src="assets/images/sustainable.jpg" alt="sustainable shoes">
-                </div>
-                <div class="column">
-                    <img src="assets/images/organic.jpg" alt="Organic shoes">
-                </div>
         
-        
-            <div class="column">
+        <!-- <div class="row">
+     
+                <img src="assets/images/sustainable.jpg" alt="sustainable shoes">
+               
+                <img src="assets/images/organic.jpg" alt="Organic shoes">
                 <img src="assets/images/handcrafted.jpg" alt="Organic shoes">
-            </div>
-        
-        </div>
-
-
+       </div> -->
 
 
         <footer class="primary-footer">
@@ -124,6 +124,8 @@
 
 
     </div>
+
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
 </body>
 
 </html>
