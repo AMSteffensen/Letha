@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/typography.css">
     <link rel="stylesheet" href="assets/stylesheets/footer.css">
+    <link rel="stylesheet" href="assets/stylesheets/responsive.css">
     <link rel="stylesheet" href="assets/stylesheets/forms.css">
     <link rel="stylesheet" href="assets/stylesheets/header.css">
     <link rel="stylesheet" href="assets/stylesheets/layout.css">
     <link rel="stylesheet" href="assets/stylesheets/nav.css">
+    <link rel="stylesheet" href="assets/stylesheets/about.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
 
     <meta charset="UTF-8">
@@ -21,6 +23,8 @@
 
 </head>
 
+
+
 <body>
 
     <div id="content">
@@ -29,7 +33,65 @@
                 <a href="index.html">LETHA</a>
             </h1>
         </header>
-        <nav class="primary-nav">
+        <nav>
+
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Products
+                        <ion-icon name="arrow-dropdown"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="boots.html">Boots</a>
+                        <a href="brouges.html">Brouges</a>
+                    </div>
+                </div>
+
+                <div class="topnav-right">
+                    <a href="#search">
+                        <ion-icon name="search"></ion-icon>
+                    </a>
+                    <a href="#cart">
+                        <ion-icon name="cart"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="brouges.html">Brouges</a></li>
+                    <li><a href="bashfull_brouge.html">Hardy Hiker</a></li>
+            </ul> 
+        </nav>
+
+        <section class="box1">
+                <img src="assets/images/brouges-de.jpg" alt="Italian Trulli">
+        </section>
+
+        <section class="box2 product-item">
+            <h2>Hardy Hiker</h2>
+            <h3>330.00$</h3>
+
+            <p>For those who enjoy the outdoors, the Hardy Hiker is for you. This trendy boot is made from strong, durable leather and utilises the latest sole technology to ensure a comfortable fit. The boot is only available in brown leather.
+                    Whether you wear it while exploring the city or heading into the hills, this boot is the perfect accessory for the rugged, chic look.
+
+                    <ul>
+                        <li>Durable leather</li>
+                        <li>Latest technology sole for maximum comfort</li>
+                        <li>Only available in brown</li>
+                    </ul>
+                    
+                    
+                    
+                    
+                    </p>
+        </section>
+
+   
+    <footer class="primary-footer">
+
+        <nav>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -43,87 +105,16 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
+
             </ul>
         </nav>
+        <small>&copy; LETHA</small>
+    </footer>
 
-        <section class="box1">
-
-            <article>
-
-                <figure class="center box">
-                    <h1>BROUGES</h1>
-                    <a href="brouges.html">View All</a>
-                    <img class="figure-img" src="assets/images/brouges.png" alt="A pair of brouges">
-                    <figure>
-            </article>
-
-        </section>
-        <section class="box2">
-
-            <article>
-
-                <figure class="center box">
-                    <h1>BOOTS</h1>
-                    <a href="boots.html">View All</a>
-                    <img class="figure-img" src="assets/images/hiking.png" alt="A pair of hiking shoes">
-                    <figure>
-            </article>
-
-        </section>
-        <section class="box1">
-            <video width="320" height="240" controls>
-                <source src="assets/videos/Shoes-Stories.mp4" type="video/mp4"> Your browser does not support the video tag.
-            </video>
-        </section>
-        <section class="box2">
-            <h2>Wear quailty, that invests in you and your future.</h2>
-            <a class="btn btn-alt">LEARN MORE</a>
-        </section>
-
-        <!-- Product showcase -->
-
-        <div class="row">
-                <div class="column">
-                    <img src="assets/images/sustainable.jpg" alt="sustainable shoes">
-                </div>
-                <div class="column">
-                    <img src="assets/images/organic.jpg" alt="Organic shoes">
-                </div>
-        
-        
-            <div class="column">
-                <img src="assets/images/handcrafted.jpg" alt="Organic shoes">
-            </div>
-        
-        </div>
+</div>
 
 
-
-
-        <footer class="primary-footer">
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
-            </nav>
-            <small>&copy; LETHA</small>
-        </footer>
-
-
-    </div>
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
 </body>
 
 </html>
